@@ -18,12 +18,13 @@ Repositori ini berisi:
 
 ## 🧰 Hardware yang Digunakan
 
-- ESP32 Dev Board
+- Arduino Uno R4
+- Liquid Crystal 2x16 (LCD Display)
 - Sensor Ultrasonik HC-SR04
 - Modul RF NRF24L01
 - Breadboard & kabel jumper
-- Power supply (5V)
-- [Opsional] Buzzer / indikator
+- Power supply (5V) / Usb Cable / Connector
+- [Opsional] Buzzer / indikator / LED
 
 
 
@@ -31,14 +32,14 @@ Repositori ini berisi:
 
 ### 1. Persiapkan Perangkat Keras
 
-- Hubungkan ESP32 dengan HC-SR04 dan NRF24 sesuai skema `skema_rangkaian.jpg`
+- Hubungkan Arduino Uno R4 dengan HC-SR04 dan NRF24 sesuai skema `skema_rangkaian.jpg`
 - Pastikan kabel NRF24 pendek (modul sensitif terhadap noise)
 - Gunakan kapasitor 10uF–100uF jika perlu di antara VCC-GND NRF
 
 ### 2. Setup Software
 
 - Buka file `.ino` (contohnya `Node2_EWS.ino`) di Arduino IDE
-- Install board **ESP32** dari Board Manager
+- Install board **ESP32** dari Board Manager (jika menggunakan Esp32)
 - Pastikan Library NRF24 sudah tersedia (lihat folder `lib_nrf24` atau install via Library Manager)
 
 ### 3. Modifikasi untuk Node Lain
@@ -49,10 +50,10 @@ Repositori ini berisi:
 
 ### 4. Upload dan Jalankan
 
-- Sambungkan ESP32 ke PC/laptop
-- Pilih port dan board ESP32 yang sesuai
+- Sambungkan Arduino Uno R4/ESP32 ke PC/laptop
+- Pilih port dan board yang sesuai
 - Klik Upload
-- Monitor hasil melalui Serial Monitor (baudrate sesuai kode, misalnya `115200`)
+- Monitor hasil melalui Serial Monitor (baudrate sesuai kode, `9600`)
 
 ## 📝 Catatan
 
@@ -65,5 +66,5 @@ Repositori ini berisi:
 
 Proyek ini bersifat open-source dan dapat digunakan untuk keperluan edukasi, riset, maupun pengembangan lanjutan.
 
----
+---    @Catalyst    ---
 
